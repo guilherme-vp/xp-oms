@@ -8,7 +8,7 @@ interface OrderCreatedArgs {
     email: string
   }
   items: Array<{
-    id: string
+    productId: string
     quantity: number
   }>
 }

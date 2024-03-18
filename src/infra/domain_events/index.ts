@@ -20,10 +20,14 @@ async function publishMessage({
   const dataBuffer = Buffer.from(stringifiedData)
 
   try {
-    const messageId = await pubsub.topic(eventName).publishMessage({ data: dataBuffer })
+    const messageId = await pubsub
+      .topic(`projects/notification-service-dev-4e89c/topics/${eventName}`)
+      .publishMessage({ data: dataBuffer })
     logger.info(`Mensagem ${messageId} publicada`, message)
   } catch (error) {
+    console.log(error)
     logger.error(`Erro ao publicar: ${(error as Error).message}`)
+    throw error
   }
 }
 

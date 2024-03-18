@@ -5,7 +5,7 @@ import { Field, ID, InputType } from 'type-graphql'
 export class OrderItemInput {
   @IsString()
   @Field(() => ID)
-  id!: string
+  productId!: string
 
   @IsNumber()
   @Min(1)
