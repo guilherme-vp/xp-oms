@@ -1,5 +1,6 @@
 import { PubSub } from '@google-cloud/pubsub'
 import logger from '@infra/logger'
+import settings from '@infra/settings'
 
 export enum DomainEventName {
   /* eslint-disable @typescript-eslint/naming-convention */
@@ -21,7 +22,9 @@ async function publishMessage({
 
   try {
     const messageId = await pubsub
-      .topic(`projects/notification-service-dev-4e89c/topics/${eventName}`)
+      .topic(
+        `projects/${settings.gcp.notificationsService.projectId.concat('/')}topics/${eventName}`
+      )
       .publishMessage({ data: dataBuffer })
     logger.info(`Mensagem ${messageId} publicada`, message)
   } catch (error) {

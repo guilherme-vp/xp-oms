@@ -13,6 +13,11 @@ const settings = {
   mongo: {
     url: mongoURLKey,
     database: DEFAULT_DATABASE
+  },
+  gcp: {
+    notificationsService: {
+      projectId: getEnv('NOTIF_PROJECT_ID')
+    }
   }
 }
 
