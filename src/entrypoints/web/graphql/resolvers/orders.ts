@@ -13,9 +13,8 @@ export class OrderResolver {
 
   @Mutation(() => OrderModel)
   async createOrder(@Arg('input', () => CreateOrderInput) input: CreateOrderInput) {
-    console.log(input)
     logger.info('Processando Criação de um Pedido', input)
-    const order = ordersDomain.onOrderCreated(input)
+    const order = await ordersDomain.onOrderCreated(input)
     return order
   }
 }

@@ -10,6 +10,6 @@ export class OrderModel {
   @Field(() => OrderUserModel)
   user!: OrderUserModel
 
-  @Field(() => OrderItemModel)
-  items!: OrderItemModel
+  @Field(() => [OrderItemModel])
+  items!: OrderItemModel[]
 }
