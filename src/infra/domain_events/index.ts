@@ -28,8 +28,7 @@ async function publishMessage({
       .publishMessage({ data: dataBuffer })
     logger.info(`Mensagem ${messageId} publicada`, message)
   } catch (error) {
-    console.log(error)
-    logger.error(`Erro ao publicar: ${(error as Error).message}`)
+    logger.error('Erro ao publicar:', error)
     throw error
   }
 }
