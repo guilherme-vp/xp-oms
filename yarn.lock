@@ -1622,7 +1622,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cors@npm:^2.8.5":
+"@types/cors@npm:^2, @types/cors@npm:^2.8.5":
   version: 2.8.17
   resolution: "@types/cors@npm:2.8.17"
   dependencies:
@@ -5763,6 +5763,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"graphql-scalars@npm:^1.22.5":
+  version: 1.22.5
+  resolution: "graphql-scalars@npm:1.22.5"
+  dependencies:
+    tslib: "npm:^2.5.0"
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+  checksum: 10c0/f0a0bba16d0b8c1b33bf930bdf4073184df0f6b88e7fdb8e40a39bcab91c4b9db85392a614eaab5eb32886ae7407d648a8e3069f6541fe8f108e717737ec1b97
+  languageName: node
+  linkType: hard
+
 "graphql-subscriptions@npm:^1.1.0":
   version: 1.2.1
   resolution: "graphql-subscriptions@npm:1.2.1"
@@ -8359,6 +8370,7 @@ __metadata:
     "@google-cloud/pubsub": "npm:^4.3.3"
     "@swc/cli": "npm:^0.3.10"
     "@swc/core": "npm:^1.4.8"
+    "@types/cors": "npm:^2"
     "@types/express": "npm:^4"
     "@types/graphql-validation-complexity": "npm:^0"
     "@types/node": "npm:^20.11.28"
@@ -8366,6 +8378,7 @@ __metadata:
     class-transformer: "npm:^0.5.1"
     class-validator: "npm:^0.14.1"
     concurrently: "npm:^8.2.2"
+    cors: "npm:^2.8.5"
     dotenv: "npm:^16.4.5"
     express: "npm:^4.18.3"
     firebase-admin: "npm:^12.0.0"
@@ -8373,8 +8386,10 @@ __metadata:
     firebase-functions-test: "npm:^3.1.1"
     firebase-tools: "npm:^13.5.1"
     graphql: "npm:^16.8.1"
+    graphql-scalars: "npm:^1.22.5"
     graphql-validation-complexity: "npm:^0.4.2"
     mongoose: "npm:^8.2.2"
+    reflect-metadata: "npm:^0.2.1"
     ts-node: "npm:^10.9.2"
     type-graphql: "npm:^1.1.1"
     typescript: "npm:^5.4.2"
@@ -9108,6 +9123,13 @@ __metadata:
   dependencies:
     esprima: "npm:~4.0.0"
   checksum: 10c0/350f5e39aebab3886713a170235c38155ee64a74f0f7e629ecc0144ba33905efea30c2c3befe1fcbf0b0366e344e7bfa34e6b2502b423c9a467d32f1306ef166
+  languageName: node
+  linkType: hard
+
+"reflect-metadata@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "reflect-metadata@npm:0.2.1"
+  checksum: 10c0/6ca3c674bb43cf8ec3a3f5f38c8730a6116335f8e562fcdcdf3a492af168c5a7f0e8f17476a5710c3fe6bf9b5d22e8a463f14c0e26e326339cab65e099900ef7
   languageName: node
   linkType: hard
 
@@ -10443,7 +10465,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.1, tslib@npm:^2.1.0, tslib@npm:^2.4.0":
+"tslib@npm:^2.0.1, tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.5.0":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
   checksum: 10c0/e03a8a4271152c8b26604ed45535954c0a45296e32445b4b87f8a5abdb2421f40b59b4ca437c4346af0f28179780d604094eb64546bee2019d903d01c6c19bdb
