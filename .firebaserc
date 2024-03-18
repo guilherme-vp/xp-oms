@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "order-management-service-dev",
+    "development": "order-management-service-dev",
+    "production": "order-management-service-12e5f"
+  }
+}
